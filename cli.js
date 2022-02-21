@@ -21,6 +21,8 @@ if (command === "list") {
 }
 
 function runListCommand() {
-  // Replace this with your implementation
-  console.log("Called the list command");
+  members.forEach(member => {
+    const { id, firstname, lastname, jobtitle } = member
+    console.log(`${id}- ${firstname} ${lastname} works as ${jobtitle}`)
+  })
 }
